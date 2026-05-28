@@ -15,20 +15,11 @@ header {
     padding: 20px;
 }
 
-.cabecalho-itens {
-    max-width: 140px;           /* Reduzido de 198px */
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+..cabecalho-itens img {
+    width: 130px;     /* tamanho fixo */
+    height: auto;
 }
 
-/* Garante que a imagem dentro não ultrapasse o container */
-.cabecalho-itens img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-} 
 .titulo_site {
     padding: 30px;
     text-align: center;
