@@ -16,20 +16,19 @@ header {
 }
 
 .cabecalho-itens {
-    max-width: 198px;
+    max-width: 140px;           /* Reduzido de 198px */
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.cabecalho-imagem {
-    width: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
+/* Garante que a imagem dentro não ultrapasse o container */
+.cabecalho-itens img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+} 
 .titulo_site {
     padding: 30px;
     text-align: center;
