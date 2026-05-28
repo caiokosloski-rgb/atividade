@@ -16,7 +16,7 @@ header {
 }
 
 .cabecalho-itens {
-    max-width: 1980px;
+    max-width: 198px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@ header {
 }
 
 .titulo_site {
-    padding: 50px;
+    padding: 30px;
     text-align: center;
     width: 50%;
     font-size: 30px; /* Corrigido: era 'font', agora 'font-size' */
