@@ -16,18 +16,17 @@ header {
 }
 
 ..cabecalho-itens img {
-    width: 100px;     /* tamanho fixo */
-    height: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;           
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
 }
 
-
-.titulo_site {
-    padding: 30px 0;           /* Padding só em cima e embaixo */
-    text-align: center;
-    font-size: 30px;
-    width: fit-content;        /* Ou 100% / 50% / 70% */
-    margin: 0 auto;            /* Centraliza horizontalmente */
-    display: block;
+.cabecalho-itens img:hover {
+    transform: scale(1.08);           
 }
 
 .sociais {
