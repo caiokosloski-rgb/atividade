@@ -16,7 +16,7 @@ header {
 }
 
 ..cabecalho-itens img {
-    width: 130px;     /* tamanho fixo */
+    width: 100px;     /* tamanho fixo */
     height: auto;
 }
 
