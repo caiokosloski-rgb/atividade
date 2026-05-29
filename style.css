@@ -6,52 +6,94 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    line-height: 1.6;
 }
 
+/* ==================== HEADER ==================== */
 header {
     background-color: #424e61;
-    color: rgb(255, 255, 255);
-    width: 70%;
-    padding: 15px;
+    color: white;
+    width: 100%;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-..cabecalho-itens img {
-    width: 70px;
-    height: 70px;
+/* Container Logo + Título */
+.cabecalho-itens {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo redonda e menor */
+.cabecalho-itens img {
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #fff;           
+    border: 3px solid #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
 
 .cabecalho-itens img:hover {
-    transform: scale(1.08);           
+    transform: scale(1.08);
 }
 
+.titulo_site {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+/* Redes Sociais */
 .sociais {
     display: flex;
-    justify-content: flex-end;
-    width: 25%;
-    padding-right: 30px;
+    align-items: center;
+    gap: 15px;
 }
+
+/* ==================== SEÇÕES ==================== */
 
 .banner1 {
     display: flex;
     justify-content: center;
+    padding: 20px 0;
+}
+
+.estudante {
+    background-color: #ffffff;
+    padding: 50px 0;
 }
 
 .estudante_titulo {
-    padding: 50px;
+    padding: 50px 0;
     text-align: center;
 }
 
-.estudante-nome {
+.estudantes_todos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 5%;
+}
+
+.estudante div {
     text-align: center;
 }
 
 .estudante-imagem {
     width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .estudante-icone {
@@ -59,31 +101,15 @@ header {
     padding: 4px 8px;
 }
 
-.estudante {
-    background-color: #ffffff; /* Corrigido: removido o erro 'background-image: background-color' */
-    padding: 24px 0;
-}
-
-.estudante div { /* Corrigido: removido o ponto antes de 'div' para selecionar as tags dentro da classe */
-    text-align: center;
-    padding: 24px 0;
-}
-
-.estudantes_todos {
-    display: flex;
-    justify-content: space-around;
-}
-
 .escola {
-    background-image: linear-gradient(#40A2E3,#7FC2EF);
-    color: rgb(255, 255, 255);
-    padding: 24px 0;
+    background-image: linear-gradient(#40A2E3, #7FC2EF);
+    color: white;
+    padding: 70px 0;
     text-align: center;
-    display: block; /* Simplificado: removido o flex duplicado para evitar conflitos */
 }
 
 .escola-titulo {
-    padding: 50px;
+    padding: 50px 0;
     text-align: center;
 }
 
@@ -92,7 +118,12 @@ header {
     padding: 12px 0;
 }
 
+/* Links */
 .link {
     color: #ffffff;
     text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
